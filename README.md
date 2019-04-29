@@ -9,8 +9,7 @@ it is based on the https://github.com/matterport/Mask_RCNN.
 
 Therefore, it is necessary to install the pycocotools and the mask-rcnn-coco.h5 model.
 
-I modify the demo.py so that I can save two masks image instead of showing in the figure.
-
+I modify the demo.py so that I can save mask image instead of showing in the figure.
 
 
 
