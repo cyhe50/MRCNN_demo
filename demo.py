@@ -32,7 +32,7 @@ class InferenceConfig(coco.CocoConfig):
     IMAGES_PER_GPU = 1
 
 config = InferenceConfig()
-config.display()
+# config.display()
 
 
 # Create model object in inference mode.
@@ -67,7 +67,7 @@ class_names = ['BG', 'person', 'bicycle', 'car', 'motorcycle', 'airplane',
 # file_names = next(os.walk(IMAGE_DIR))[2]
 # image = skimage.io.imread(os.path.join(IMAGE_DIR, random.choice(file_names)))
 
-file_names = IMAGE_DIR +"/7933423348_c30bd9bd4e_z.jpg"
+file_names = IMAGE_DIR +"/25691390_f9944f61b5_z.jpg"
 image = skimage.io.imread(file_names)
 
 # Run detection
@@ -77,9 +77,10 @@ results = model.detect([image], verbose=1)
 r = results[0]
 # print(r)
 # print(r['rois'][0])
-visualize.display_instances(image, r['rois'], r['masks'], r['class_ids'], 
-                            class_names, r['scores'])
-plt.show()
+# visualize.display_instances(image, r['rois'], r['masks'], r['class_ids'], 
+#                             class_names, r['scores'])
+# plt.show()
+print(r)
 
 
 #total 24.9s
